@@ -109,8 +109,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     margin-top: 3rem;
+    width: 100%;
 }
 
 span{
@@ -234,10 +235,16 @@ span{
     font-weight: 600;
     min-width: 280px;
     white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-animation span{
     position: relative;
+    display: inline-block;
 }
 
 .text-animation span:before{
@@ -1045,20 +1052,50 @@ span{
     .home {
         gap: 5rem;
         margin: 2rem;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     .home-content h1 {
         font-size: 3.5rem;
+        width: 100%;
+        text-align: center;
     }
 
     .home-content h3 {
         font-size: 1.8rem;
+        width: 100%;
+        text-align: center;
     }
 
     .home-content p {
         font-size: 1.2rem;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* FIX FOR ANIMATED TEXT */
+    .text-animation {
+        width: 100%;
+        min-width: auto;
+        font-size: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .text-animation span {
+        display: inline-block;
     }
 
     .home-img img {
@@ -1207,21 +1244,55 @@ span{
         max-width: 100%;
     }
 
-    .home-content h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+    .home {
+        text-align: center;
+        margin: 1rem;
+        gap: 3rem;
+    }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     .home-content h1 {
         font-size: 2.5rem;
         margin-top: 1rem;
         line-height: 1.2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FIX FOR ANIMATED TEXT */
+    .text-animation {
+        width: 100%;
+        min-width: auto;
+        font-size: 1.8rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .text-animation span {
+        display: inline-block;
     }
 
     .home-content p {
         font-size: 1rem;
         line-height: 1.6;
         word-break: break-word;
+        text-align: center;
+        max-width: 100%;
     }
 
     .heading {
